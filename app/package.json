@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "postinstall": "dotnet tool restore",
-    "start": "dotnet fable watch src --run webpack-dev-server",
-    "build": "dotnet fable src && webpack",
+    "start": "dotnet fable watch src --run webpack serve",
+    "build": "dotnet fable src --run webpack --mode production",
     "tests-console": "mocha dist/tests -r esm",
     "watch:tests": "dotnet fable watch tests -o dist/tests --runWatch mocha dist/tests -r esm",
     "tests": "dotnet fable tests --run webpack --config webpack.config.tests.js",
