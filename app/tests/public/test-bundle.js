@@ -635,6 +635,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./tests/Run.fs.js":
+/*!*************************!*\
+  !*** ./tests/Run.fs.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"main\": () => (/* binding */ main)\n/* harmony export */ });\n/* harmony import */ var _fable_fable_library_3_2_9_Option_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./.fable/fable-library.3.2.9/Option.js */ \"./tests/.fable/fable-library.3.2.9/Option.js\");\n/* harmony import */ var _TestFramework_fs_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TestFramework.fs.js */ \"./tests/TestFramework.fs.js\");\n/* harmony import */ var _Tests_fs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Tests.fs.js */ \"./tests/Tests.fs.js\");\n/* harmony import */ var _fable_fable_library_3_2_9_List_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./.fable/fable-library.3.2.9/List.js */ \"./tests/.fable/fable-library.3.2.9/List.js\");\n\n\n\n\n\nconsole.log((0,_fable_fable_library_3_2_9_Option_js__WEBPACK_IMPORTED_MODULE_0__.some)(\"Running tests\"));\n\nfunction main() {\n    (0,_TestFramework_fs_js__WEBPACK_IMPORTED_MODULE_1__.runTests)((0,_fable_fable_library_3_2_9_List_js__WEBPACK_IMPORTED_MODULE_3__.singleton)(_Tests_fs_js__WEBPACK_IMPORTED_MODULE_2__.tests));\n}\n\nmain();\n\n\n\n//# sourceURL=webpack:///./tests/Run.fs.js?");
+
+/***/ }),
+
 /***/ "./tests/TestFramework.fs.js":
 /*!***********************************!*\
   !*** ./tests/TestFramework.fs.js ***!
@@ -729,7 +740,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./tests/Tests.fs.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./tests/Run.fs.js");
 /******/ 	
 /******/ })()
 ;

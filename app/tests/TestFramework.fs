@@ -1,5 +1,6 @@
 ﻿module TestFramework
 
+open System
 open Browser.Dom
 open Browser.Types
 open Fable.Core

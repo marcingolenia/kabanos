@@ -1,4 +1,4 @@
-module Tests.Tests
+module Tests
 
 open TestFramework
 open Sutil

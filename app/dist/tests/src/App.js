@@ -3,7 +3,7 @@ import { Html } from "../.fable/Sutil.1.0.0-beta-011/Html.fs.js";
 import { mountElement } from "../.fable/Sutil.1.0.0-beta-011/Program.fs.js";
 
 export function app() {
-    return HtmlEngine$1__div_Z721C83C5(Html, "Hello World");
+    return HtmlEngine$1__div_Z721C83C5(Html, "Hello World from sutil");
 }
 
 mountElement("sutil-app", app());
