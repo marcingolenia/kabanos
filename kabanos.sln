@@ -2,6 +2,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "App", "app\src\App.fsproj", "{4342C6D1-29B2-440F-8EE6-B7B0906858E6}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Tests", "app\tests\Tests.fsproj", "{22D4A8E2-63F0-4314-B26F-7320927DD335}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{8B4DF2A8-511F-483E-9DF8-997D39A7E446}"
+ProjectSection(SolutionItems) = preProject
+	app\README.md = app\README.md
+	app\webpack.config.js = app\webpack.config.js
+	app\package.json = app\package.json
+	app\webpack.config.tests.js = app\webpack.config.tests.js
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +22,13 @@ Global
 		{4342C6D1-29B2-440F-8EE6-B7B0906858E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4342C6D1-29B2-440F-8EE6-B7B0906858E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4342C6D1-29B2-440F-8EE6-B7B0906858E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22D4A8E2-63F0-4314-B26F-7320927DD335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22D4A8E2-63F0-4314-B26F-7320927DD335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22D4A8E2-63F0-4314-B26F-7320927DD335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22D4A8E2-63F0-4314-B26F-7320927DD335}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4342C6D1-29B2-440F-8EE6-B7B0906858E6} = {8B4DF2A8-511F-483E-9DF8-997D39A7E446}
+		{22D4A8E2-63F0-4314-B26F-7320927DD335} = {8B4DF2A8-511F-483E-9DF8-997D39A7E446}
 	EndGlobalSection
 EndGlobal
