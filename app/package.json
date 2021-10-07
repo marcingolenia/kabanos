@@ -4,14 +4,13 @@
     "postinstall": "dotnet tool restore",
     "start": "dotnet fable watch src --run webpack serve",
     "build": "dotnet fable src --run webpack --mode production",
-    "tests-console": "mocha dist/tests -r esm",
-    "watch:tests": "dotnet fable watch tests -o dist/tests --runWatch mocha dist/tests -r esm",
-    "tests": "dotnet fable tests --run webpack --config webpack.config.tests.js",
+    "test": "dotnet fable tests -o build/tests --run web-test-runner build/tests/*Test.js --node-resolve",
+    "test:watch": "dotnet fable watch test -o build/test --run web-test-runner build/test/*Test.js --node-resolve --watch",
     "start:tests": "dotnet fable watch tests --run webpack serve --config webpack.config.tests.js "
   },
   "devDependencies": {
-    "esm": "^3.2.25",
-    "mocha": "^8.2.1",
+    "@web/test-runner": "^0.13.18",
+    "@web/test-runner-commands": "^0.5.13",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"

@@ -5,11 +5,10 @@
         <GenerateProgramFile>false</GenerateProgramFile>
     </PropertyGroup>
     <ItemGroup>
-        <Compile Include="TestFramework.fs" />
-        <Compile Include="Tests.fs" />
-        <Compile Include="Run.fs" />
+        <Compile Include="FirstTest.fs" />
     </ItemGroup>
     <ItemGroup>
+        <PackageReference Include="Fable.Expect" Version="1.1.0" />
         <PackageReference Include="Fable.Mocha" Version="1.0.0" />
         <PackageReference Include="Fable.Promise" Version="2.*" />
     </ItemGroup>
