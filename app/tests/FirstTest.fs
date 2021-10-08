@@ -14,6 +14,6 @@ describe "Testing!" <| fun () ->
     
     it "element renders" <| fun () -> promise {
         use container = Container.New()
-        DOM.mountOn (Html.div "Hello World from sutil.") container.El |> ignore
+        DOM.mountOn (App.app()) container.El |> ignore
         container.El |> Expect.innerText "Hello World from sutil."
     }
