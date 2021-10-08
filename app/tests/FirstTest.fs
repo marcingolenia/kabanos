@@ -2,18 +2,15 @@ module Tests
 
 open Expect
 open Expect.Dom
-open Sutil
 open WebTestRunner
 
+let render _component =
+    let container = Container.New()
+    Sutil.DOM.mountOn _component container.El |> ignore
+    container
+
 describe "Testing!" <| fun () ->
-    it "whatever works" <| fun () -> promise {
-        use container = Container.New()
-        container.El.innerHTML <- "whatever works."
-        container.El |> Expect.innerText "whatever works."
-    }
-    
     it "element renders" <| fun () -> promise {
-        use container = Container.New()
-        DOM.mountOn (App.app()) container.El |> ignore
-        container.El |> Expect.innerText "Hello World from sutil."
+        use sut = render App.app
+        sut.El |> Expect.innerText "Hello World from sutil."
     }
