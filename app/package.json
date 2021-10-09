@@ -5,8 +5,7 @@
     "start": "dotnet fable watch src --run webpack serve",
     "build": "dotnet fable src --run webpack --mode production",
     "test": "dotnet fable tests -o build/tests --run web-test-runner build/tests/*Test.js --node-resolve",
-    "test:watch": "dotnet fable watch test -o build/test --run web-test-runner build/test/*Test.js --node-resolve --watch",
-    "start:tests": "dotnet fable watch tests --run webpack serve --config webpack.config.tests.js "
+    "test:watch": "dotnet fable watch test -o build/test --run web-test-runner build/test/*Test.js --node-resolve --watch"
   },
   "devDependencies": {
     "@web/test-runner": "^0.13.18",
