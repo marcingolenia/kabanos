@@ -9,7 +9,6 @@ ProjectSection(SolutionItems) = preProject
 	app\README.md = app\README.md
 	app\webpack.config.js = app\webpack.config.js
 	app\package.json = app\package.json
-	app\webpack.config.tests.js = app\webpack.config.tests.js
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D9F73E6-61D9-4DCB-9FE3-4B362F078CDC}"

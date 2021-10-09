@@ -14,9 +14,15 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '5.0.400'
-      - name: Restore dependencies
+      - name: Restore dependencies - be
         run: dotnet restore
+      - name: Restore dependencies - fe
+        working-directory: ./app
+        run: npm install
       - name: Build
         run: dotnet build --no-restore
-      - name: Test
+      - name: Test - be
         run: dotnet test
+      - name: Test - fe
+        working-directory: ./app
+        run: npm run test
