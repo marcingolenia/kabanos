@@ -1,5 +1,5 @@
-module App.Program
+module Program
 
 open Sutil
 
-app |> Program.mountElement "sutil-app"
+App.app |> Program.mountElement "sutil-app"

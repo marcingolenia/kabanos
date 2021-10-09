@@ -12,6 +12,12 @@ ProjectSection(SolutionItems) = preProject
 	app\webpack.config.tests.js = app\webpack.config.tests.js
 EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D9F73E6-61D9-4DCB-9FE3-4B362F078CDC}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Kabanos", "src\Kabanos\Kabanos.fsproj", "{E9565C15-73A9-4AC3-AB94-FFB71F7FF42D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Tests", "src\Tests\Tests.fsproj", "{141A7F76-5172-4B30-B002-20775FCF51E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +32,19 @@ Global
 		{22D4A8E2-63F0-4314-B26F-7320927DD335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22D4A8E2-63F0-4314-B26F-7320927DD335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22D4A8E2-63F0-4314-B26F-7320927DD335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9565C15-73A9-4AC3-AB94-FFB71F7FF42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9565C15-73A9-4AC3-AB94-FFB71F7FF42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9565C15-73A9-4AC3-AB94-FFB71F7FF42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9565C15-73A9-4AC3-AB94-FFB71F7FF42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{141A7F76-5172-4B30-B002-20775FCF51E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{141A7F76-5172-4B30-B002-20775FCF51E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{141A7F76-5172-4B30-B002-20775FCF51E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{141A7F76-5172-4B30-B002-20775FCF51E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4342C6D1-29B2-440F-8EE6-B7B0906858E6} = {8B4DF2A8-511F-483E-9DF8-997D39A7E446}
 		{22D4A8E2-63F0-4314-B26F-7320927DD335} = {8B4DF2A8-511F-483E-9DF8-997D39A7E446}
+		{E9565C15-73A9-4AC3-AB94-FFB71F7FF42D} = {8D9F73E6-61D9-4DCB-9FE3-4B362F078CDC}
+		{141A7F76-5172-4B30-B002-20775FCF51E3} = {8D9F73E6-61D9-4DCB-9FE3-4B362F078CDC}
 	EndGlobalSection
 EndGlobal
