@@ -19,8 +19,11 @@ jobs:
       - name: Restore dependencies - fe
         working-directory: ./app
         run: npm install
-      - name: Build
+      - name: Build - be
         run: dotnet build --no-restore
+      - name: Build - fe
+        working-directory: ./app
+        run: npm run build
       - name: Test - be
         run: dotnet test
       - name: Test - fe
