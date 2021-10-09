@@ -18,9 +18,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Kabanos", "src\Kabanos\Kaba
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Tests", "src\Tests\Tests.fsproj", "{141A7F76-5172-4B30-B002-20775FCF51E3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5D17C3EB-6EA8-44E0-A4C6-1D64C8CD34F2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_root", "_root", "{5D17C3EB-6EA8-44E0-A4C6-1D64C8CD34F2}"
 ProjectSection(SolutionItems) = preProject
 	.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	README.md = README.md
 EndProjectSection
 EndProject
 Global
