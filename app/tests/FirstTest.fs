@@ -9,8 +9,18 @@ let render _component =
     Sutil.DOM.mountOn _component container.El |> ignore
     container
 
-describe "Testing!" <| fun () ->
-    it "element renders" <| fun () -> promise {
+describe "Initial board should have" <| fun () ->
+    it "Queue column" <| fun () -> promise {
         use sut = render App.app
-        sut.El |> Expect.innerText "Hello World from sutil."
+        sut.El |> Expect.innerText "Queue"
     }
+    
+//    it "In progress column" <| fun () -> promise {
+//        use sut = render App.app
+//        sut.El |> Expect.innerText "Hello World from sutil."
+//    }
+//    
+//    it "Done column" <| fun () -> promise {
+//        use sut = render App.app
+//        sut.El |> Expect.innerText "Hello World from sutil."
+//    }

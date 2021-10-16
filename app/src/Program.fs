@@ -1,5 +1,11 @@
 module Program
 
 open Sutil
+open Sutil.Styling
 
-App.app |> Program.mountElement "sutil-app"
+let css_reset = [
+    rule "body" [
+        Css.margin 0
+    ]
+]
+App.app |> withStyle css_reset |> Program.mountElement "sutil-app" 

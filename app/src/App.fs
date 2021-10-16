@@ -1,6 +1,9 @@
 module App
 
+open Grid
 open Sutil
 
 let app =
-    Html.div "Hello World from sutil."
+    Html.div [
+        Grid.view()
+    ]
